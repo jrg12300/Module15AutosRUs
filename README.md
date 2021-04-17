@@ -3,7 +3,7 @@ Module 15
 
 Deliverable 1: Linear Regression to Predict MPG
 
-[insert picture of console here][https://github.com/jrg12300/Module15AutosRUs/blob/main/d1image.PNG]
+![insert picture of console here](https://github.com/jrg12300/Module15AutosRUs/blob/main/d1image.PNG)
 
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
   Weight, spoiler angle, and AWD
