@@ -11,8 +11,6 @@ MechaCarDF <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = 
 #and add the dataframe you created in Step 4 as the data parameter.
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MechaCarDF))
 
-
-
 #Read in the Suspension_Coil.csv file as a table.
 SuspensionCoilDF <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
 
@@ -25,12 +23,16 @@ total_summary <- SuspensionCoilDF %>% summarize(avg = mean(PSI), median = median
 #each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil's PSI column.
 lot_summary <- SuspensionCoilDF %>% group_by(Manufacturing_Lot) %>% summarize(avg = mean(PSI), median = median(PSI),variance = var(PSI),SD = sd(PSI))
 
+#In your MechaCarChallenge.RScript, write an RScript using the t.test() function 
+#to determine if the PSI across all manufacturing lots is statistically different 
+#from the population mean of 1,500 pounds per square inch.
+t.test(SuspensionCoilDF$PSI,mu=1500)
 
-
-
-
-
-
-
+#Next, write three more RScripts in your MechaCarChallenge.RScript using the 
+#t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is 
+#statistically different from the population mean of 1,500 pounds per square inch.
+t.test(subset(SuspensionCoilDF,Manufacturing_Lot== 'Lot1')$PSI,mu=1500) #Lot1
+t.test(subset(SuspensionCoilDF,Manufacturing_Lot== 'Lot2')$PSI,mu=1500) #Lot2
+t.test(subset(SuspensionCoilDF,Manufacturing_Lot== 'Lot3')$PSI,mu=1500) #Lot3
 
 
