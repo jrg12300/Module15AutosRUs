@@ -18,7 +18,9 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 Deliverable 2: Create Visualizations for the Trip Analysis 
 
 Here are the results of deliverable 2 technical analysis:
+
 ![insert picture of the 1st dataframe](https://github.com/jrg12300/Module15AutosRUs/blob/main/d2.1image.PNG)
+
 ![insert picture of the 2nd dataframe](https://github.com/jrg12300/Module15AutosRUs/blob/main/d2.2image.PNG)
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
@@ -26,10 +28,15 @@ The design specifications for the MechaCar suspension coils dictate that the var
   
 Deliverable 3: T-Tests on Suspension Coils 
 Briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+
 ![insert pic of total t test](https://github.com/jrg12300/Module15AutosRUs/blob/main/d3totalimage.PNG)
+
 ![insert pic of lot 1 t test](https://github.com/jrg12300/Module15AutosRUs/blob/main/d3.1image.PNG)
+
 ![insert pic of lot 2 t test](https://github.com/jrg12300/Module15AutosRUs/blob/main/d3.2image.PNG)
+
 ![insert pic of lot 3 t test](https://github.com/jrg12300/Module15AutosRUs/blob/main/d3.3image.PNG)
+
 
 Using a confidence 95% confidence, the average PSI of suspension for all lots is not statiscally different than 1500 (p = 0.06)
 Using a confidence 95% confidence, the average PSI of suspension for lot 1 is not statiscally different than 1500 (p = 1)
